@@ -98,7 +98,7 @@ function init_woocommerce_gateway_bapp()
             return strtolower(md5($signOriginStr . "app_secret=" . $appSecret));
         }
 
-        public function http_request($url, $method = 'GET', $params = [])
+        public function http_request($url, $method = 'GET', $params = array())
         {
             $curl = curl_init();
             if ($method == 'POST') {
@@ -115,7 +115,7 @@ function init_woocommerce_gateway_bapp()
             curl_setopt($curl, CURLOPT_TIMEOUT, 60);
             $output = curl_exec($curl);
             if (curl_errno($curl) > 0) {
-                return [];
+                return array();
             }
             curl_close($curl);
             $json = json_decode($output, true);
