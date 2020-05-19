@@ -27,7 +27,7 @@ function init_woocommerce_gateway_bapp()
         public function __construct()
         {
             $this->id = 'bapp';
-            $this->icon = 'https://cdn.fwtqo.cn/static/img/20190613_48.png';
+            $this->icon = 'https://cdn.rctsnwr.cn/static/img/20190613_48.png';
             $this->has_fields = true;
             $this->method_title = 'B.app支付';
             $this->method_description = 'B.app操作簡單，掃一掃即可完成支付，免礦工費，支持大額支付';
